@@ -1,0 +1,14 @@
+<div id="header-bar">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4" style="padding-top: 5px">
+        <%= name %>
+      </div>
+      <% if current_user %>
+          <div class="col-md-8 text-right">
+            <%= link_to('Logout', destroy_user_session_path, method: :delete, :style => 'color:white') %>
+          </div>
+      <% end %>
+    </div>
+  </div>
+</div>
