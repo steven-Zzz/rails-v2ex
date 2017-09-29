@@ -1,16 +1,47 @@
-<div id="header-bar">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4" style="padding-top: 5px">
-        <%= name %>
-      </div>
-      <% if current_user %>
-          <div class="col-md-8 text-right">
-          <img src="<%= current_user.avatar_url %>" width="14"/> <%= current_user.username %>
-            <%= link_to('Logout', destroy_user_session_path, method: :delete, :style => 'color:#e0e0e0') %>
-            <%= link_to('Register', new_user_registration_path, :style => 'color:#e0e0e0') %>
-          </div>
-      <% end %>
+<!--<div id="header-bar">-->
+<!--<div class="container">-->
+<!--<div class="row">-->
+<!--<div class="col-md-4" style="padding-top: 5px">-->
+<!--<%= name %>-->
+<!--</div>-->
+<!--
+<% if current_user %>-->
+    <!--<div class="col-md-8 text-right">-->
+    <img src="<%= current_user.avatar_url %>" width="14"/> <%= current_user.username %>
+    <!--<%= link_to('Logout', destroy_user_session_path, method: :delete, :style => 'color:#e0e0e0') %>-->
+    <!--<%= link_to('Register', new_user_registration_path, :style => 'color:#e0e0e0') %>-->
+    <!--</div>-->
+    <!--
+<% end %>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+
+<div id="Top">
+  <div class="content">
+    <div style="padding-top: 6px;">
+      <table cellpadding="0" cellspacing="0" border="0" width="100%">
+        <tbody>
+        <tr>
+          <td width="110" align="left">
+            <a href="/" name="top" title="way to explore">
+              <img src="//v2ex.assets.uxengine.net/site/logo@2x.png?m=1346064962" border="0" align="default" alt="V2EX" width="94" height="30">
+            </a>
+          </td>
+          <td width="auto" align="left">
+            <div id="Search">
+              <form action="https://www.google.com" onsubmit="return dispatch()" target="_blank">
+                <div style="width: 276px; height: 28px; background-size: 276px 28px; background-image: url('<%= asset_path("v2ex/qbar_light@2x.png") %>'); background-repeat: no-repeat; display: inline-block;">
+                  <input type="text" maxlength="40" name="q" id="q" value=""></div>
+              </form>
+            </div>
+          </td>
+          <td width="570" align="right" style="padding-top: 2px;">
+            <a href="/" class="top">首页</a>&nbsp;&nbsp;&nbsp;<a href="/signup" class="top">注册</a>&nbsp;&nbsp;&nbsp;<a href="/signin" class="top">登录</a>
+          </td>
+        </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </div>
