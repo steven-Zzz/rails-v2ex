@@ -13,36 +13,3 @@
  *= require_tree .
  *= require_self
  */
-
-/*#header-bar {*/
-    /*background: #8466b0;*/
-    /*border-bottom: 1px solid #614787;*/
-    /*color: white;*/
-    /*padding: 5px 0;*/
-    /*margin-bottom: 20px;*/
-    /*font-size: 14px;*/
-/*}*/
-
-/*.active-message {*/
-    /*background: #eee;*/
-    /*color: #555;*/
-    /*margin: -10px 0;*/
-    /*padding: 10px 0;*/
-/*}*/
-
-/*.media img {*/
-    /*float: left;*/
-/*}*/
-
-/*.tab-content .media {*/
-    /*cursor: pointer;*/
-/*}*/
-
-/*.tab-content .tab-pane a {*/
-    /*text-decoration: none;*/
-/*}*/
-
-/*.tab-content .tab-pane .media-body {*/
-    /*padding: 22px 0;*/
-/*}*/
-
